@@ -15,12 +15,16 @@ function destructivelyRemoveFirstCat(Milo){
 
 function appendCat(Broom) {
     const newArray = [...cats, Broom];
-    return newArray;
-  }
+} 
+cats = appendCat(cats);
+console.log(cats);
 
 function prependCat(Garfield){
-    cats.unshift(arrayofcats,1,2)
+    const newArray=([Garfield,...cats])
 }
+cat = prependCat(cats);
+console.log(cats);
+
 function removeFirstCat(Garfield){
     cats.shift()
 }
